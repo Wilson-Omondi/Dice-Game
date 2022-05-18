@@ -6,8 +6,6 @@ init()
 //document.querySelector('#current-' + activePlayer).textContent = dice;
 //document.querySelector('#current-' + activePlayer).innerHTML = '';
 
-
-
 document.querySelector('.btn-roll').addEventListener('click',function(){
   //check if game is active/playng
   if(gamePlaying){
@@ -36,11 +34,9 @@ document.querySelector('.btn-roll').addEventListener('click',function(){
 
 })
 
-
 // EventListener for the hold button
 
 document.querySelector('.btn-hold').addEventListener('click', function(){
-  
   
   if(gamePlaying){
     // Add Current score to global score
@@ -63,9 +59,7 @@ document.querySelector('.btn-hold').addEventListener('click', function(){
     }
 
   }
- 
 })
-
 
 function nextPlayer(){
   //Next player
@@ -87,7 +81,6 @@ function nextPlayer(){
 //New Game EventListener
 document.querySelector('.btn-new').addEventListener('click', init)
 
-
 function init (){
   scores = [0, 0];
   activePlayer = 0;
@@ -108,7 +101,6 @@ document.querySelector('.player-1-panel').classList.remove('winner');
 document.querySelector('.player-0-panel').classList.remove('active');
 document.querySelector('.player-1-panel').classList.remove('active');
 document.querySelector('.player-0-panel').classList.add('active');
-
 
 }
 
